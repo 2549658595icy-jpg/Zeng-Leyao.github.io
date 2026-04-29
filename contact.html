@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="logo">Icy<br>( ´ ▽ ` )</div>
+      <ul class="nav-links">
+        <li><a href="index.html">about</a></li>
+        <li><a href="photos.html">photos</a></li>
+        <li><a href="experience.html">experience</a></li>
+        <li><a href="contact.html" class="active">contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- 使用新的左右分栏网格布局 -->
+      <div class="contact-grid">
+        
+        <!-- 左侧：3:4 的竖版照片 -->
+        <div class="contact-image-wrapper">
+          <!-- 请把 "contact-portrait.jpg" 换成你真实的照片名字 -->
+          <img src="contact-me.jpg" alt="Let's connect">
+        </div>
+
+        <!-- 右侧：文字介绍与留言表单 -->
+        <div class="contact-content">
+          <h1 class="contact-title">Let's Create Something Together.</h1>
+          <p class="contact-desc">
+            I am always open to discussing digital marketing, social media strategies, interaction design, or simply having a good conversation over coffee. Feel free to reach out.
+          </p>
+
+          <!-- 极简留言表单 -->
+          <!-- 👇 极简且无需后端的邮件按钮 👇 -->
+          <div style="margin-top: 2rem; margin-bottom: 4rem;">
+            <!-- 这里把 your.email@example.com 换成你的真实邮箱 -->
+            <!-- subject=后面是自动填入的邮件标题 -->
+            <!-- body=后面是自动填入的邮件正文开场白 -->
+            <a href="mailto:your.email@example.com?subject=Hello%20from%20your%20website&body=Hi%20Leyao,%0A%0AI%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!%0A%0A" 
+               class="submit-btn" 
+               style="text-decoration: none; display: inline-block;">
+               Contact me via Email →
+            </a>
+            
+            <p style="font-size: 0.85rem; color: #888; margin-top: 1rem;">
+              Clicking the button will open your default email client.
+            </p>
+          </div>
+          <!-- 👆 邮件按钮结束 👆 -->
+
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos - My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入正文无衬线字体与标题衬线字体(Playfair Display) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* 为了实现图一的倒影，必须在这里用内联样式将图片设置为背景 */
+    .ls-1 { background-image: url('my-life-1.jpg'); }
+    .ls-2 { background-image: url('my-life-2.jpg'); }
+    .ls-3 { background-image: url('my-life-3.jpg'); }
+    .ls-4 { background-image: url('my-life-4.jpg'); }
+    .ls-5 { background-image: url('my-life-5.jpg'); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="logo">Icy<br>( ´ ▽ ` )</div>
+      <ul class="nav-links">
+        <li><a href="index.html">about</a></li>
+        <li><a href="photos.html" class="active">photos</a></li>
+        <li><a href="experience.html">experience</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- 第一部分：生活照 (Lifestyle - 错落排版) -->
+      <section class="photos-section">
+        <h2 class="photos-section-title" style="font-family: 'Playfair Display', serif;">LIFE IN MOTION</h2>
+        <p class="photos-section-desc" style="margin-bottom: 1rem;">
+          Some candid moments and fragments of everyday life.
+        </p>
+
+        <!-- 5张生活照错落排列，带有倒影 -->
+        <div class="lifestyle-gallery">
+          <!-- 这里的 src 和上面 style 里的 background-image URL 必须保持一致 -->
+          <div class="lifestyle-item ls-1"><img src="my-life-1.jpg" alt="生活照1"></div>
+          <div class="lifestyle-item ls-2"><img src="my-life-2.jpg" alt="生活照2"></div>
+          <div class="lifestyle-item ls-3"><img src="my-life-3.jpg" alt="生活照3"></div>
+          <div class="lifestyle-item ls-4"><img src="my-life-4.jpg" alt="生活照4"></div>
+          <div class="lifestyle-item ls-5"><img src="my-life-5.jpg" alt="生活照5"></div>
+        </div>
+
+        <p class="photos-section-desc" style="text-align: left; max-width: 650px; margin: 0 auto 3rem;">
+          I often feel that because of my ability to sense things, there are too many things that touch me deeply.<br>
+          The back view of someone holding hands while walking<br>
+          The sunset reflected in the rearview mirror on my way home from work<br>
+          A bright yellow streak on the art wall<br>
+          The moment when leaves spin and fall<br>
+          A raindrop and a cloud<br>
+          <br>
+          The days repeat in monotony<br>
+          But these moments are brand new and filled with happiness<br>
+          It makes me never feel lonely when being alone.<br>
+          Instead, it makes me feel fulfilled.<br>
+          <br>
+          When traveling alone or taking a walk,<br>
+          I open all my senses.<br>
+          Everything around becomes astonishing and interesting.<br>
+          <br>
+          Krishnamurti wrote in "The Tree of Life": Sensation can make the human heart become more acute. Beauty, language, the silence between words, and the awareness of sound - all of these will bring about intense sensations.<br>
+          <br>
+          Being good at sensing is a very valuable ability.<br>
+          Strong feelings can give people a very concrete sense of life.
+        </p>
+      </section>
+
+      <!-- 第二部分：作品集 (Portfolio - 3D折页排版) -->
+      <section class="photos-section" style="margin-top: 8rem;">
+        <h2 class="photos-section-title" style="font-family: 'Playfair Display', serif;">CITIES' MOMENTS, CAPTURED IN FRAMES</h2>
+        
+        <!-- 8张作品照，分两行，呈屏风折叠状 -->
+        <div class="portfolio-gallery">
+          <!-- 第一行 (4张) -->
+          <div class="portfolio-row">
+            <div class="portfolio-item"><img src="portfolio-item-1.jpg" alt="作品1"></div>
+            <div class="portfolio-item"><img src="portfolio-item-2.jpg" alt="作品2"></div>
+            <div class="portfolio-item"><img src="portfolio-item-3.jpg" alt="作品3"></div>
+            <div class="portfolio-item"><img src="portfolio-item-4.jpg" alt="作品4"></div>
+          </div>
+          
+          <!-- 第二行 (4张) -->
+          <div class="portfolio-row">
+            <div class="portfolio-item"><img src="portfolio-item-5.jpg" alt="作品5"></div>
+            <div class="portfolio-item"><img src="portfolio-item-6.jpg" alt="作品6"></div>
+            <div class="portfolio-item"><img src="portfolio-item-7.jpg" alt="作品7"></div>
+            <div class="portfolio-item"><img src="portfolio-item-8.jpg" alt="作品8"></div>
+          </div>
+        </div>
+
+        <p class="photos-section-desc">
+          Each passing year brings joy, creating the ebb and flow of life.<br>
+          Entering this blue fairyland, everything is beautiful, and life is also romantic.<br>
+          The best travel is when you find a long-lost emotion in a strange place.<br>
+          The answer lies on the road,<br>
+          freedom is in the wind,<br>
+          and the wind blows you to read the page you should.<br>
+        </p>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
